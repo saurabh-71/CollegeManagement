@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home-College Of Business Studies</title>
+    <link rel="shortcut icon" href="./Images/icbs_logo.png" type="image/x-icon">
+    <link href="~/Content/Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Css/footer.css" rel="stylesheet" />
+    <link href="~/Content/Css/style.css" rel="stylesheet" />
+    <script src="~/Content/Bootstrap/js/jquery.min.js"></script>
+    <script src="~/Content/Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@ViewBag.Title || College Management</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark header-back sticky-top header-navbar-fonts">
+        <a class="navbar-brand d-flex align-items-center" href="~/home/index">
+            <img src="~/Content/Images/logo.jpg" class="logo-image" width="50" height="50">
+            <h3 class="text-light text-uppercase ml-2">College Management</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Home/Index">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Home/ACADEMICS">ACADEMICS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Home/ADMISSION">ADMISSION<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="~/Home/login"><i class="fa fa-sign-in text-white fa-lg" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    @* Header end *@
+    <div>
+        @RenderBody()
+    </div>
+    @* Footer start*@
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+                        <h3>Imperial College</h3>
+                        <p>
+                            This Project has been made by Muhammad Husnain Raza with the help of
+                            my Allah Almighty.
+                            The prupose of this project is Learning Computer Languages.
+                            I hope you realy enjoyed to visit this project. Thanks!
+                        </p>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="">About ICBS</a></li>
+                            <li><a href="">Admissions Policy</a></li>
+                            <li><a href="">Apply for Admission</a></li>
+                            <li><a href="">Download Prospectus</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                        <h2>UNDERGRADUATE PROGRAMS</h2>
+                        <ul>
+                            <li><a href="">B.Sc. Civil Engineering</a></li>
+                            <li><a href="">B.Sc. Electrical Engineering</a></li>
+                            <li><a href="">B.Sc. Mechanical Engineering</a></li>
+                            <li><a href="">B. Architecture</a></li>
+                            <li><a href="">BS Computer Science</a></li>
+                            <li><a href="">Bachelors of Business Administration</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+                        <h2>CONTACT DETAILS</h2>
+                        <p>
+                            Address: Imperial College of Business Studies,
+                            Bahria Town, Shahkam Chowk, Canal Bank Road,53720 Lahore – Pakistan
+                        </p>
+                        <p>Telephones: (+92 42) 35978525-32</p>
+                        <p>E-mail: admissions@imperial.edu.pk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom-text">CopyRights © reserved by Raza Programming and Code Academia.2020</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
